@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/u_navigation"
+    app:startDestination="@id/userHomeFragment">
+
+    <fragment
+        android:id="@+id/userHomeFragment"
+        android:name="com.example.mealbuddyapp.user.UserHomeFragment"
+        android:label="fragment_user_home"
+        tools:layout="@layout/fragment_user_home" >
+        <action
+            android:id="@+id/action_userHomeFragment_to_menuDetails"
+            app:destination="@id/menuDetails" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/userFavFragment"
+        android:name="com.example.mealbuddyapp.user.UserFavFragment"
+        android:label="fragment_user_fav"
+        tools:layout="@layout/fragment_user_fav" />
+    <fragment
+        android:id="@+id/userProfileFragment"
+        android:name="com.example.mealbuddyapp.user.UserProfileFragment"
+        android:label="fragment_user_profile"
+        tools:layout="@layout/fragment_user_profile" />
+    <fragment
+        android:id="@+id/menuDetails"
+        android:name="com.example.mealbuddyapp.ui.MenuDetails"
+        android:label="fragment_menu_details"
+        tools:layout="@layout/fragment_menu_details" >
+
+        <action
+            android:id="@+id/action_menuDetails_to_userHomeFragment"
+            app:destination="@id/userHomeFragment" />
+        <argument
+            android:name="foodName"
+            app:argType="string"
+            app:nullable="true"
+            android:defaultValue="null" />
+        <argument
+            android:name="resturantName"
+            app:argType="string"
+            app:nullable="true"
+            android:defaultValue="null" />
+        <argument
+            android:name="description"
+            app:argType="string"
+            app:nullable="true"
+            android:defaultValue="null" />
+        <argument
+            android:name="picUrl"
+            app:argType="string"
+            app:nullable="true"
+            android:defaultValue="string" />
+        <argument
+            android:name="price"
+            app:argType="string"
+            app:nullable="true"
+            android:defaultValue="null" />
+    </fragment>
+</navigation>

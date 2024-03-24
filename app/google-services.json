@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "594003921828",
+    "project_id": "mealbuddyapp-f813e",
+    "storage_bucket": "mealbuddyapp-f813e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:594003921828:android:c3ca871a2369e614460f31",
+        "android_client_info": {
+          "package_name": "com.example.mealbuddyapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC6yR8aqrrfNGSB_vbra2gB9TSusYojxL4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
